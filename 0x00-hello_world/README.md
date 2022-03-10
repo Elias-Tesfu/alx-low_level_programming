@@ -1,0 +1,1 @@
+This read me file is for the first projects I am working in the alx low level programming repo inside the hello world directory.

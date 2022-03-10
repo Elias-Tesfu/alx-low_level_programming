@@ -1,0 +1,1 @@
+This is the read me file for the alx low level programming repository. In this repository we are going to see a lot more of c programming files and exercises.

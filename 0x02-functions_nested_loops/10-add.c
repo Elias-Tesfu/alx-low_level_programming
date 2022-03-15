@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * add - adds 2 numbers 
- * @i: the first parameter 
- * @j: the second parammeter
- * Return: the sum
+ * add - adds two numbers
+ * @i: this is the first parameter
+ * @j: this is the second parameter
+ * Return: Returns the sum a+b
  */
 int add(int i, int j)
 {

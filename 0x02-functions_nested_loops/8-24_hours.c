@@ -2,11 +2,11 @@
 /**
  * jack_bauer - counts every minute of jack
  *
- * Return: 
+ * Return: Always 0
  */
 void jack_bauer(void)
 {
-	int i ,j;
+	int i, j;
 
 	for (i = 0; i < 24; i++)
 	{

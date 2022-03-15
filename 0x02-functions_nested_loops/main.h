@@ -1,4 +1,4 @@
-#int main(string s)
+int main(string s)
 {
 	puts(s);
 }

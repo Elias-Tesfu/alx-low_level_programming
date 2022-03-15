@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - Entry point
+ *print_alphabet will print the alpahabets using a forloop
  *
  * Return: Always 0
  */

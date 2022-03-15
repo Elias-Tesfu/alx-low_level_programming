@@ -6,12 +6,12 @@
  */
 int main(void)
 {
-	char WRITE[] = "_putchar";
+	char str[] = "_putchar";
 	int i;
 	
-	while (WRITE[i] != '\0')
+	while (str[i] != '\0')
 	{
-		_putchar(WTIRE[i]);
+		_putchar(str[i]);
 		i++;
 	}
 	_putchar('\n');

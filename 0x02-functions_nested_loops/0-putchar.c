@@ -6,6 +6,14 @@
  */
 int main(void)
 {
-	main("_putchar\n");
+	char WRITE[] = "_putchar";
+	int c;
+	
+	while (WRITE[i] != '\0')
+	{
+		_putchar(WTIRE[i]);
+		i++;
+	}
+	_putchar('\n');
 	return (0);
 }

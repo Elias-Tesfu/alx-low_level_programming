@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *print_alphabet will print the alpahabets using a forloop
+ *print_alphabet - will print the alpahabets using a forloop
  *
  * Return: Always 0
  */

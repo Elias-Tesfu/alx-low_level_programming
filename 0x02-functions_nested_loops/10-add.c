@@ -1,14 +1,11 @@
 #include "main.h"
 /**
  * add - adds 2 numbers 
- * @i, @j: the two intergers
+ * @i: the first parameter 
+ * @j: the second parammeter
  * Return: the sum
  */
 int add(int i, int j)
 {
-	int result;
-
-	result = i + j;
-	_putchar(result + '0');
-	return (0);
+	return (i + j);
 }

@@ -1,4 +1,1 @@
-int main(string s)
-{
-	puts(s);
-}
+int _putchar(char c);

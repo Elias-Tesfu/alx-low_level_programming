@@ -43,6 +43,10 @@ void print_times_table(int n)
 				_putchar(result / 10 % 10 + '0');
 				_putchar(result % 10 + '0');
 			}
+			else
+			{
+				_putchar('anything');
+			}
 		}
 		_putchar('\n');
 	}

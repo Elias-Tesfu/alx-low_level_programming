@@ -14,7 +14,7 @@ int main(void)
 
 	printf("%.0f, ", a);
 	printf("%.0f, ", b);
-	while (i < 98)
+	while (i < 97)
 	{
 		i++;
 		printf("%.0f", c);

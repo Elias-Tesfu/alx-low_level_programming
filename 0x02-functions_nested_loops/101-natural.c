@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 /**
  * main - Entrty point
  *
@@ -13,6 +13,6 @@ int main(void)
 		if (i % 3 == 0 || i % 5 == 0)
 			tot += i;
 	}
-	_putchar(tot);
-	return(0);
+	printf("%d", tot);
+	return (0);
 }

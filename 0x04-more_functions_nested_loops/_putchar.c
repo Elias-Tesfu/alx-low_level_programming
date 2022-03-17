@@ -1,20 +1,13 @@
-#include "main.h"
+#include <unistd.h>
 
 /**
- * main - Entry point
+ * _putchar - wtires the charcter c to stdout
+ * @c: character
  *
- * Return: Always 0
+ * Return: returns 1 on sucess
  */
 
-int main(void)
+int _putchar(char c)
 {
-	char str[] = "_putchar";
-	int i;
-
-	for (i = 0; i < str[i]; i++)
-	{
-		_putchar(str[i]);
-	}
-	_putchar('\n');
-	return (0);
+	return (write(1, &c, 1));
 }

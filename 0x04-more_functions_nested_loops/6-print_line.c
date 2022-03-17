@@ -2,8 +2,8 @@
 
 /**
  * print_line - prints a line for n number of space
- * @n: number of ssspaces
- * Return: 1
+ * @n: number of spaces
+ * Return: Always 0
  */
 
 void print_line(int n)

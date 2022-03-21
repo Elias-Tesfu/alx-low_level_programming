@@ -9,12 +9,22 @@
 
 int _atoi(char *s)
 {
-	int i, num, len;
+	int i, sign = 1, num = 0;
 
-	len = strlen(s);
-	for (i = 0; i < len; i++)
+	if (s[0] == '-')
 	{
-		num = num * 10 + (s[i] - 48);
+		sign = -1;
+		i = 1;
 	}
-	return (num);
+	for ( ; s[i] != '\0'; i++)
+	{
+		if (s[i] > '9' || s[i] < '0')
+			break;
+		else
+		{
+			num = num * 10 + s[i] - '0';
+			num = num * sign;
+		}
+	}
+	return num;
 }

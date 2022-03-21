@@ -10,9 +10,11 @@
 int _atoi(char *s)
 {
 	int i, num, len;
-	
+
 	len = strlen(s);
 	for (i = 0; i < len; i++)
+	{
 		num = num * 10 + (s[i] - 48);
+	}
 	return (num);
 }

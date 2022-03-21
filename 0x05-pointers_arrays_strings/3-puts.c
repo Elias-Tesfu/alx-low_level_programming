@@ -1,5 +1,5 @@
 #include <string.h>
-#include <unistd.h>
+#include <stdio.h>
 
 /**
  * _puts - prints a string
@@ -14,6 +14,6 @@ void _puts(char *str)
 	len = strlen(str);
 	for (i = 0; i < len; i++)
 	{
-		write(1, &str, 1);
+		printf("%c", str[i]);
 	}
 }

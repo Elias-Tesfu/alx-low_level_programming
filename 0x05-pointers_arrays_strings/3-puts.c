@@ -12,8 +12,9 @@ void _puts(char *str)
 	int i, len;
 
 	len = strlen(str);
-	for (i = 0; i < len; i++)
+	for (i = 0; i <= len; i++)
 	{
 		printf("%c", str[i]);
 	}
+	printf("\n");
 }

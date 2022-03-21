@@ -18,9 +18,7 @@ int _atoi(char *s)
 	}
 	for ( ; s[i] != '\0'; i++)
 	{
-		if (s[i] > '9' || s[i] < '0')
-			continue;
-		else
+		if (s[i] < '9' || s[i] > '0')
 		{
 			num = num * 10 + s[i] - '0';
 			num = num * sign;

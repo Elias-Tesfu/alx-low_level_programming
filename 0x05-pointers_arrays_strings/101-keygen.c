@@ -32,7 +32,7 @@ void keygen(void)
 		}
 		else if (rando == 2)
 		{
-			password[i] = symbols[rand() % 8];
+			password[i] = symbol[rand() % 8];
 			rando = rand() % 4;
 			printf("%c", password[i]);
 		}

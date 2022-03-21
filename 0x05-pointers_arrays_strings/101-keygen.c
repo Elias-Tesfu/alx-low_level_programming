@@ -17,8 +17,8 @@ void keygen(void)
 	char num[] = "0123456789";
 	char LETT[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char lett[] = "acdefghijklmnopqrstuvwxyz";
-	char symb[] = "!@#$^&*?";
-	char password[n];
+	char symbol[] = "!@#$^&*?";
+	char password[];
 
 	rando = rand() % 4;
 

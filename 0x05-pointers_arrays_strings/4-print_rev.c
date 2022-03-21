@@ -9,12 +9,14 @@
 
 void print_rev(char *s)
 {
-	int i, len;
+	char *t = s;
 
-	len = strlen(s);
-	for (i = len - 1; i >= 0; i--)
+	if (s)
 	{
-		printf("%c", s[i]);
+		while (*t)
+			++t;
+		while (s < t--)
+			_putchar(*t);
+		_putchar('\n');
 	}
-	printf("\n");
 }

@@ -11,14 +11,14 @@
 
 void keygen(void)
 {
-	int i, rando;
+	int i, rando, n;
 
 	srand((unsigned int)(time(NULL)));
 	char num[] = "0123456789";
 	char LETT[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char lett[] = "acdefghijklmnopqrstuvwxyz";
 	char symbol[] = "!@#$^&*?";
-	char password[];
+	char password[n];
 
 	rando = rand() % 4;
 

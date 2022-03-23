@@ -1,0 +1,1 @@
+This is the read me file for the sixth exercise on low level programming with c. And deals with Arrays, Pointers and strings.

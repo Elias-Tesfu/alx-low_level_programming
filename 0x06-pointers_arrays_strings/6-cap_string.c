@@ -14,13 +14,13 @@ char *cap_string(char *str)
 	{
 		if (i == 0)
 		{
-			if ((str[i] >= 97 && str[i] <= 122))
+			if ((str[i] >= 97) && (str[i] <= 122))
 			{
 				str[i] = str[i] - 32;
 				continue;
 			}
 		}
-		else if (str[i] == ' ')
+		else if (str[i] == ' ' || str[i] == '\n')
 		{
 			i++;
 			if (str[i] > 97 && str[i] <= 122)

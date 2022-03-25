@@ -11,7 +11,7 @@ char *rot13(char *str)
 	int i;
 	char rot13[] = "abcdefghijklmnopqrstuvwxyz";
 	char ROT13[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char *ptr = s;
+	char *ptr = str;
 
 	while (*str)
 	{

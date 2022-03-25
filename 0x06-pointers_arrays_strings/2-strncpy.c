@@ -1,26 +1,53 @@
+#include <stdio.h>
 #include "main.h"
-#include <stddef.h>
-#include <string.h>
+/**
+ * isLower - determines whether ascii is lowercase
+ * @c: character
+ * Return: 1 if true, 0 if false
+ */
+int isLower(char c)
+{
+	return (c >= 97 && c <= 122);
+}
 
 /**
- * _strncpy - copies a string
- * @src: source address of the string
- * @dest: destination address of the string
- * @n: the number of bytes
- * Return: a pointer to the resulting string dest/
+ * isDelimiter - determines whether ascii is a delimiter
+ * @c: character
+ * Return: 1 if true, 0 if false
  */
-
-char *_strncpy(char *dest, char *src, int n)
+int isDelimiter(char c)
 {
 	int i;
+	char delimiter[] = " \t\n,.!?\"(){}";
 
-	for (i = 0; i < n && src[i] != '\0'; i++)
+	for (i = 0; i < 12; i++)
+		if (c == delimiter[i])
+			return (1);
+	return (0);
+}
+
+/**
+ * cap_string - capitalizes all words of a string
+ * @s: input string
+ * Return: string with capitalized words
+ */
+char *cap_string(char *s)
+{
+	char *ptr = s;
+	int foundDelimit = 1;
+
+	while (*s)
 	{
-		dest[i] = src[i];
+		if (isDelimiter(*s))
+			foundDelimit = 1;
+		else if (isLower(*s) && foundDelimit)
+		{
+			*s -= 32;
+			foundDelimit = 0;
+		}
+		else
+			foundDelimit = 0;
+		s++;
 	}
-	for ( ; i < n; i++)
-	{
-		dest[i] = '\0';
-	}
-	return (dest);
+	return (ptr);
 }

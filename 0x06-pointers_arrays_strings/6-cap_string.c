@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+
 /**
  * isLower - determines whether ascii is lowercase
  * @c: character
@@ -15,6 +16,7 @@ int isLower(char c)
  * @c: character
  * Return: 1 if true, 0 if false
  */
+
 int isDelimiter(char c)
 {
 	int i;

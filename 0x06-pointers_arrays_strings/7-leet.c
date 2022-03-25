@@ -9,30 +9,21 @@
 
 char *leet(char *str)
 {
-	int i;
+	unsigned int i;
+	char *the_string = str;
+	char key[] = {'A', 'E', 'O', 'T', 'L'};
+	int val[] = {4, 3, 0, 7, 1};
 
-	for (i = 0; str[i] != '\0'; i++)
+	while (*the_string)
 	{
-		if (str[i] == 'a' || str[i] == 'A')
+		for (i = 0; i < sizeof(key) / sizeof(char); i++)
 		{
-			str[i] = '4';
+			if (*the_string == key[i] || *the_string == key[i] + 32)
+			{
+				*the_string = 48 + val[i];
+			}
 		}
-		else if (str[i] == 'e' || str[i] == 'E')
-		{
-			str[i] = '3';
-		}
-		else if (str[i] == 'o' || str[i] == 'O')
-		{
-			str[i] = '0';
-		}
-		else if (str[i] == 't' || str[i] == 'T')
-		{
-			str[i] = '7';
-		}
-		else if (str[i] == 'l' || str[i] == 'L')
-		{
-			str[i] = '1';
-		}
+		the_string++;
 	}
 	return (str);
 }

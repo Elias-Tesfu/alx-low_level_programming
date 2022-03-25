@@ -1,8 +1,9 @@
 #include "main.h"
+
 /**
  * print_times_table - printss time table for n
  * @n: number of times
- * Return: Time table
+ * Return:
  */
 void print_times_table(int n)
 {
@@ -22,7 +23,6 @@ void print_times_table(int n)
 			else if (result <= 9)
 			{
 				_putchar(',');
-				_putchar(' ');
 				_putchar(' ');
 				_putchar(' ');
 				_putchar(result + '0');

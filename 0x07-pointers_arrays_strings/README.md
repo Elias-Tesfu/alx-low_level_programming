@@ -1,0 +1,1 @@
+This is the read me file for the additional exercise on pointerpointers arrays and strings the seventh exercise.

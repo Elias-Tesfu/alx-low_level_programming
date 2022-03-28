@@ -1,7 +1,8 @@
 #include "main.h"
 #include <string.h>
 
-/**_memset - fills memory with a constant byte.
+/**
+ * _memset - fills memory with a constant byte.
  * @s: the string to be edited
  * @b: the charater to edit the string
  * @n: the bytes of memory

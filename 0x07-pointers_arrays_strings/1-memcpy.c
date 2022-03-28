@@ -1,7 +1,8 @@
 #include "main.h"
 #include <string.h>
 
-/**_memcpy - copies mempry area
+/**
+ * _memcpy - copies mempry area
  * @dest: destination
  * @src: source
  * @n: number of bytes

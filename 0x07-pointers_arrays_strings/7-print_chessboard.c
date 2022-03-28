@@ -2,11 +2,11 @@
 
 /**
  * print_chessboard - prints the chessboard
- * @board: the int
+ * @a: the int
  * Return
  */
 
-void print_chessboard(char board)
+void print_chessboard(char (*a)[8])
 {
 	int i, j;
 
@@ -14,7 +14,8 @@ void print_chessboard(char board)
 	{
 		for (j = 0; j < 8; j++)
 		{
-			printf(board[i][j]);
+			_putchar(a[i][j]);
 		}
+		_putchar('\n');
 	}
 }

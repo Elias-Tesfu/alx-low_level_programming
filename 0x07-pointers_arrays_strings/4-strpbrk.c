@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * _strpbrk - finds the first character in the string that matches the character.
+ * _strpbrk - searchs a string for any of a set of bytes.
  * @s: the string to be scanned
  * @accept: the string to match
  * Return: a pointer to the byte in the string to be scanned.

@@ -1,0 +1,1 @@
+This is the readme file for the Recursion exercise we use the c programming language which is a low level programming language.

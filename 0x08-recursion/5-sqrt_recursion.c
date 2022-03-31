@@ -10,15 +10,12 @@ int _sqrt_recursion(int n)
 {
 	double temp = n / 2;
 
-	do {
-		if ((temp * temp) > n)
-		{
-			temp /= 2;
-		}
-		if (temp * temp < n)
-		{
-			temp = temp + (n - temp);
-		}
-	} while (((n - temp) >= .001) || ((temp - n) >= .001));
-	return (temp);
+	if (((temp * temp) <= n) && ((temp + 1) * (temp + 1) > n))
+	{
+		return (temp);
+	}
+	else
+	{
+		return (_sqrt_recursion(n));
+	}
 }

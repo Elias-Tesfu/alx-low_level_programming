@@ -8,7 +8,7 @@
  * Return: 1 if no error and 0 if error
  */
 
-int main(int argc, *char argv[])
+int main(int argc, char *argv[])
 {
 	int count, count2, sum;
 

@@ -13,6 +13,7 @@ int main(int argc, *char argv[])
 	int count, count2, sum;
 
 	sum = 0;
+
 	if (argc < 2)
 	{
 		printf("0\n");

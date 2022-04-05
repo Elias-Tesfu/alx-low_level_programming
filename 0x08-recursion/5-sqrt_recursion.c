@@ -1,21 +1,30 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - returns the natural square root of a number
- * @n: the number
- * Return: -1 if error and the number if no error
+ * _sqrt_recursion - find natural square root
+ * @n: int
+ * @val: square root
+ * Return: int
  */
-
+int square(int n, int val);
 int _sqrt_recursion(int n)
 {
-	double temp = n / 2;
+	return (square(n, 1));
+}
 
-	if (((temp * temp) <= n) && ((temp + 1) * (temp + 1) > n))
-	{
-		return (temp);
-	}
+/**
+ * square - find square root
+ * @n: int to find square root
+ * @val: square root
+ * Return: int
+ */
+
+int square(int n, int val)
+{
+	if (val * val == n)
+		return (val);
+	else if (val * val < n)
+		return  (square(n, val + 1));
 	else
-	{
-		return (_sqrt_recursion(n));
-	}
+		return (-1);
 }

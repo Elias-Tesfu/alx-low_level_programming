@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * main - prints my name followed by a new line
@@ -9,12 +9,6 @@
 
 int main(int argc, char **argv)
 {
-	int i;
-
-	for (i = 0; i < argc; i++)
-	{
-		_putchar(*argv[0]);
-	}
-	_putchar('\n');
-	return (0);
+	printf("%s\n", argv[argc - 1]);
+	exit(EXIT_SUCCESS);
 }

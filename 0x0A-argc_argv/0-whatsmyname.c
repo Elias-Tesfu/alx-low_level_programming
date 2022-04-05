@@ -9,6 +9,12 @@
 
 int main(int argc, char **argv)
 {
-	printf("%s\n", argv[argc - 1]);
-	exit(EXIT_SUCCESS);
+	int i;
+	
+	for (i = 0; i < argc; i++)
+	{
+		_putchar(*argv[0]);
+	}
+	_putchar('\n');
+	return (0);
 }

@@ -7,7 +7,7 @@
  * Return: pointer to the dup string on error returns NULL
  */
 
-char *_strdup(char *str);
+char *_strdup(char *str)
 {
 	char *strout;
 	unsigned int i, j;

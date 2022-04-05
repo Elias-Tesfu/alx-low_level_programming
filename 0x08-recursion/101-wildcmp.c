@@ -72,17 +72,5 @@ if (s2[b] != '\0')
 	return (checkLast(s2, b));
 
 return (1);
-
+	
 }
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About

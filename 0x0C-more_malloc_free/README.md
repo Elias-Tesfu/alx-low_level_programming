@@ -1,0 +1,1 @@
+This is the readme file for the 12th exercise on the low level programming with c. Focusing on Malloc. Happy coding.

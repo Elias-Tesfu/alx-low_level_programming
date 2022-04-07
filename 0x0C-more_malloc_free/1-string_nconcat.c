@@ -2,14 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-/**
- * string_nconcat - concatinates two strings
- * @s1: the first string
- * @s2: the second string
- * @n: the sieze
- * Return: pointer to the new stirng or return NULL
- */
-
 int strlen(char *s)
 {
 	int i;
@@ -18,6 +10,15 @@ int strlen(char *s)
 		;
 	return (i);
 }
+
+
+/**
+ * string_nconcat - concatinates two strings
+ * @s1: the first string
+ * @s2: the second string
+ * @n: the sieze
+ * Return: pointer to the new stirng or return NULL
+ */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {

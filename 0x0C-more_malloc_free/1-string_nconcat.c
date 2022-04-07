@@ -2,7 +2,13 @@
 #include <stdlib.h>
 #include <string.h>
 
-int strlen(char *s)
+/**
+ * _strlen - returns the length of the string
+ * @s: the string
+ * Return: the string
+ */
+
+int _strlen(char *s)
 {
 	int i;
 
@@ -22,8 +28,8 @@ int strlen(char *s)
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *strout;
-	unsigned int i, j, k, len, num;
+	char *ptr;
+	unsigned int i, j, len, num;
 
 	num = n;
 
@@ -31,12 +37,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	if (num < 0)
-		return (NULL);
+
 	if (num >= strlen(s2))
 		num = strlen(s2);
 
-	len = strlen(s1) + num + 1;
+	len = _strlen(s1) + num + 1;
 
 	ptr = malloc(sizeof(*ptr) * len);
 	if (ptr == NULL)

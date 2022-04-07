@@ -10,37 +10,42 @@
  * Return: pointer to the new stirng or return NULL
  */
 
+int strlen(char *s)
+{
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
+		;
+	return (i);
+}
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *strout;
-	unsigned int i, j, k, limit;
+	unsigned int i, j, k, len, num;
+
+	num = n;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
+	if (num < 0)
+		return (NULL);
+	if (num >= strlen(s2))
+		num = strlen(s2);
+
+	len = strlen(s1) + num + 1;
+
+	ptr = malloc(sizeof(*ptr) * len);
+	if (ptr == NULL)
+		return (NULL);
 
 	for (i = 0; s1[i] != '\0'; i++)
-		;
-	
-	if (n >= strlen(s2))
-		for (j = 0; s2[j] !='\0'; j++)
-			;
+		ptr[i] = s1[i];
+	for (j = 0; j < num; j++)
+		ptr[i + j] = s2[j];
+	ptr[i + j] = '\0';
 
-	strout = malloc(n * (i + j + 1));
-
-	if (strout == NULL)
-	{
-		free(strout);
-		return (NULL);
-	}
-
-	for (k = 0; k < i; k++)
-		strout[k] = s1[k];
-
-	limit = j;
-	for (j = 0; j <= limit; k++, j++)
-		strout[k] = s2[j];
-
-	return (strout);
+	return (ptr);
 }

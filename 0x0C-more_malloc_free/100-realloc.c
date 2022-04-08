@@ -6,7 +6,7 @@
  * @ptr: pointer to the memory previously allocated
  * @old_size: the old size of the array
  * @new_size: the new size of the array
- * Return:
+ * Return: pointer to the new memory block.
  */
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
@@ -30,6 +30,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	if (new_size > old_size && (ptr != NULL))
 	{
 		nptr = malloc(new_size);
+		if (nptr == NULL)
 			return (nptr);
 		for (i = 0; i < old_size; i++)
 			nptr[i] = *((char *)ptr + 1);

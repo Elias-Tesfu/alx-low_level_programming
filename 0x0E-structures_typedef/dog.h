@@ -1,0 +1,18 @@
+#ifndef dog_H
+#define dog_H
+/**
+ * struct dog - a new data type for dogs
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: owner of dog
+ *
+ * Description: this data type is for the dogs
+ */
+
+struct dog
+{
+	char *name;
+	float age;
+	char *owner;
+}
+#endif

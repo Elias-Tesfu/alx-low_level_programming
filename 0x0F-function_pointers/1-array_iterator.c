@@ -1,3 +1,5 @@
+#include <stddef.h>
+
 /**
  * array_iterator - function that excutes a functin as an array
  * @array: the array
@@ -8,6 +10,5 @@
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	char *ptr = (char *)array;
-	action(int);
+	action(array[size]);
 }

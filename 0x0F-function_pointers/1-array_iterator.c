@@ -1,5 +1,3 @@
-#include <stddef.h>
-
 /**
  * array_iterator - function that excutes a functin as an array
  * @array: the array

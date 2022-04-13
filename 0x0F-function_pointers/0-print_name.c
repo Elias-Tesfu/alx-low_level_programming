@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 /**
  * print_name - prints a name
  * @f: the funtion to a pointer

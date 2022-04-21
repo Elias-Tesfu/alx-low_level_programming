@@ -1,3 +1,6 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdarg.h>
 #include "lists.h"
 /**
   *print - prints before main

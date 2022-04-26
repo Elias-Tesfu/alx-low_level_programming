@@ -3,7 +3,7 @@
 #include "lists.h"
 
 /**
- * add_nodeint_end - function that adds a new node at the end of a listint _t list
+ * add_nodeint_end - function that adds a new node at the end
  * @head: the pointer to denote the position
  * @n: the element in the list
  * Return: the address of a new element or NULL if error.

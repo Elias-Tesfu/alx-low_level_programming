@@ -20,7 +20,7 @@ size_t len(const listint_t *h)
 }
 
 /**
- * get_nodeint_at_index - a function that returns the nth node of a listint_t linked list
+ * get_nodeint_at_index - a function that returns the nth node
  * @head: pointer to denote the head
  * @index: the index of the node, starting at 0
  * Return: NULL if no node or the node
@@ -38,14 +38,18 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		c++;
 
 	if (c <= index)
+	{
 		return (NULL);
+	}
 	else
 	{
 		c = 0;
 		while (new != NULL)
 		{
 			if (c == index)
+			{
 				break;
+			}
 			else
 			{
 				c++;

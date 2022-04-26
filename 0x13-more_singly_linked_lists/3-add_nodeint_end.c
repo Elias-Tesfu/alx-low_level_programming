@@ -9,7 +9,7 @@
  * Return: the address of a new element or NULL if error.
  */
 
-list int_t *addn_nodeint_end(listint_t **head, const int n)
+listint_t *addn_nodeint_end(listint_t **head, const int n)
 {
 	lisint_t *new, *last;
 

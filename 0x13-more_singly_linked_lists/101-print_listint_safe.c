@@ -1,7 +1,10 @@
 #include <stdarg.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include "lists.h"
 
+size_t len(const listint_t *head);
+size_t print_listint_safe(const listint_t *head);
 /**
  * len - a function that counts the number of elements
  * @head: pointer to denote the head

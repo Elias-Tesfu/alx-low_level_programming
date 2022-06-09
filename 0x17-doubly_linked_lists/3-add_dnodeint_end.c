@@ -4,7 +4,7 @@
  * add_dnodeint_end - function that add a node at the end
  * @head: the head of the node
  * @n: the data in the node
- * Reutn: a new node
+ * Return: a new node
  */
 
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)

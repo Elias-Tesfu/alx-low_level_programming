@@ -7,7 +7,7 @@
  * Return: sum of all the data in the nodes
  */
 
-int sum_dlistint(dlistint_t *head);
+int sum_dlistint(dlistint_t *head)
 {
 	size_t result = 0;
 

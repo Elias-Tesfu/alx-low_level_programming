@@ -1,0 +1,1 @@
+This is the readme file for the seventh assignemnt on the python exericse but we are workin on C again.
